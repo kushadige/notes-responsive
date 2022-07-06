@@ -74,6 +74,8 @@ function removeCard(e) {
     const activeCard = e.target.parentElement.parentElement.parentElement;
 
     activeCard.remove();
+    
+    setToLocalStorage();
 }
 
 function setToLocalStorage() {
